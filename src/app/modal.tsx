@@ -82,6 +82,20 @@ const Modal = (props: Props) => {
 
       <form className="mt-4 space-y-4">
         <div className="flex flex-col">
+          <label className="mb-1 font-medium">MSSV</label>
+          <input
+            type="text"
+            placeholder="MSSV"
+            className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-200"
+            value={newStudent.studentId}
+            onChange={(e) =>
+              setNewStudent((state) => ({ ...state, studentId: e.target.value }))
+            }
+            disabled={isDisabled}
+          />
+        </div>
+
+        <div className="flex flex-col">
           <label className="mb-1 font-medium">Họ và tên</label>
           <input
             type="text"

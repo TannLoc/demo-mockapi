@@ -71,7 +71,7 @@ export default function Home() {
         <table className="w-full border-collapse border border-gray-300">
           <thead>
             <tr className="bg-gray-200">
-              <th className="border border-gray-300 px-4 py-2">STT</th>
+              <th className="border border-gray-300 px-4 py-2">MSSV</th>
               <th className="border border-gray-300 px-4 py-2">Họ và tên</th>
               <th className="border border-gray-300 px-4 py-2">Lớp</th>
               <th className="border border-gray-300 px-4 py-2">Giới tính</th>
@@ -83,7 +83,7 @@ export default function Home() {
             {students.map((student) => (
               <tr key={student.id} className="odd:bg-white even:bg-gray-100">
                 <td className="border border-gray-300 px-4 py-2 text-center">
-                  {student.id}
+                  {student.studentId}
                 </td>
                 <td className="border border-gray-300 px-4 py-2">
                   {student.fullName}
